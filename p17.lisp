@@ -5,7 +5,6 @@
 
 (defun split (lst n &optional o-n o-lst)
 "Split LST into two lists, at position N"
-(print lst)
  (cond ((null lst) nil)
        ((null o-lst) (split lst n n lst))
        ((eq n 1) (list (first-n o-lst o-n) (cdr lst)))
